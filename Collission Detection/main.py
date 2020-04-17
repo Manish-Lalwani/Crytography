@@ -2,7 +2,7 @@
 import hashlib
 import itertools
 
-	#generating all permutations possible
+	#Generating all permutations possible
 def input_generator(input_string_bits):
 	print("==================================================")
 	print("Executing Input generator Function \n\n")
@@ -29,7 +29,7 @@ def hash_generator(permuted_keywords_list):
 	return hashed_permuted_keywords_list
 
 
-
+	#Comparing all generated hashes to find collission
 def hash_compare(hashed_permuted_keywords_list,no_of_bits):
 	print("==================================================")
 	print("Executing hash_compare Function \n\n")
@@ -60,7 +60,7 @@ def hash_compare(hashed_permuted_keywords_list,no_of_bits):
 
 
 
-
+	#Finding location of the matched Hash to get the original permuted value
 def location_finder(a,hashed_permuted_keywords_list_stripped):
 	print("==================================================")
 	print("Executing location finder\n\n")
